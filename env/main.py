@@ -7,7 +7,8 @@ from sklearn.preprocessing import LabelEncoder
 user_inputs = [] # empty until populated by the user
 
 # Define the categories
-categories = ["Health and Wellness", "Family", "Achievements", "Environment", "Material Possessions", "Community", "Miscellaneous"]
+categories = ["Health and Wellness", "Family", "Achievements", "Environment",
+              "Material Possessions", "Community", "Miscellaneous"]
 
 # Create an instance of MyModel (replace with your actual model)
 model = MyModel()
