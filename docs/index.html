@@ -43,7 +43,7 @@
             event.preventDefault(); // prevents the form from submitting
             const answer = new FormData(form); // gets the data from the form
             const jsonData = JSON.stringify(Object.fromEntries(answer)); // JS to JSON
-            localStorage.setItem('answer', jsonData); // saves
+            localStorage.setItem('answers', jsonData); // saves
 
             window.location.href = 'index2.html'; // goes to next page
         });
