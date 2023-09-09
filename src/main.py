@@ -17,7 +17,7 @@ def read_entry():
 
 
 def main():
-    f = open('userInputs.json')
+    f = open('../docs/data/userInputs.json')
     entries = json.load(f)
     
     categories = ["Health and Wellness", "Family", "Achievements", "Environment",
