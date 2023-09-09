@@ -22,7 +22,7 @@ body {
 .header {
   pointer-events: none;
   text-shadow: 0 0 4px #c6c6c6; /* Add shadow to text */
-  font-size: 600px; /* Increase font size to make it bigger */
+  font-size: 60px; /* Increase font size to make it bigger */
   color: #C6EBC9; /* Pastel green text color */
   margin: 0; /* Remove margin */
 }
