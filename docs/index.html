@@ -1,48 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+  <head>
+    <link rel="stylesheet" href="styles.css">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pastel Flowers</title>
-    <style>
-        body {
-            background-color: white; /* White background */
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
+  </head>
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .flower {
-            width: 100%;
-            max-width: 50px;
-            margin: 20px auto;
-            display: block;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Welcome to the Pastel Flowers Gallery</h1>
-        <p>Enjoy these lovely pastel pictures of flowers.</p>
-            <div class="flower">
-                <img src="./Flower.jpeg" alt="Pastel Flower">
-            </div>
-
-            <div class="flower">
-                <img src="./Flower.jpeg" alt="Pastel Flower">
-            </div>
-
-            <div class="flower">
-                <img src="./Flower.jpeg" alt="Pastel Flower">
-            </div>
-        <!-- Add more flower images as needed -->
-
+  <body>
+    <div class="header">
+      <h1>Bloomify</h1>
     </div>
-</body>
+
+    <div class="container">
+      <div class="flower">
+        <img src="./Flower.jpeg" alt="Pastel Flower">
+      </div>
+
+      <div class="flower">
+        <img src="./Flower.jpeg" alt="Pastel Flower">
+      </div>
+
+      <div class="flower">
+        <img src="./Flower.jpeg" alt="Pastel Flower">
+      </div>
+      <!-- Add more flower images as needed -->
+    </div>
+
+    <div class="inputs">
+      <form>
+        <label for="inputField">questions should fill this</label>
+        <input type="text" required=required placeholder=Answer>
+        <button type="submit">Submit</button>
+      </form>
+      <script src="updateQuestion.js"></script>
+    </div>
+    
+  </body>
+
 </html>
