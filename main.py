@@ -19,11 +19,11 @@ def main():
     # read input submission somehow maybe with read_entry() ?
 
     # Define the categories
-    '''
+   
     categories = ["Health and Wellness", "Family", "Achievements", "Environment",
               "Material Possessions", "Community", "Miscellaneous"]
-    '''
-    categories = ["Family", "Self Love", "Career", "Social"]
+    
+    #categories = ["Family", "Self Love", "Career", "Social"]
 
     # Create an instance of MyModel (replace with your actual model)
     model = BertForSequenceClassification.from_pretrained(
