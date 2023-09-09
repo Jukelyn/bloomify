@@ -2,7 +2,7 @@
 <hr/>
 "The mind is a garden that needs to be cultivated"
 <hr/>
-# Bloomify: Cultivating Gratitude for a Healthier Mind
+## Bloomify: Cultivating Gratitude for a Healthier Mind
 
 **Meet the Creators: Bryant Chung, Mehraz Ahmed, Jing Liu, Tahsin Rahman**
 
