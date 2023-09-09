@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const currentTime = new Date();
         const hour = currentTime.getHours();
 
-        // Define an array of labels to cycle through
+        // Array of questions
         const questions = [
             "What are some ways in which your physical or mental health improved over the past year?",
             "Can you recall a time where someone in your life went above and beyond to support your health and well-being?",
@@ -62,9 +62,6 @@ document.addEventListener("DOMContentLoaded", function () {
             "Reflect on the local traditions and customs that are unique to your community. How do these cultural practices instill a sense of pride and gratitude for the cultural heritage you share with others?",
             "Consider the sense of safety and security provided by your community's first responders, such as police, firefighters, and emergency medical personnel. How does their service make you feel grateful for their dedication and sacrifice?",
             "Reflect on the ways your community celebrates and supports its youth, whether through education, sports, or extracurricular activities. How does this investment in the younger generation evoke gratitude for the community's future?"
-
-
-            // TODO: Add more question here
         ];
 
         // Calculate the index based on the current hour
