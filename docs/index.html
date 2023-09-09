@@ -1,43 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
     <link rel="stylesheet" href="styles.css">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pastel Flowers</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <div class="header">
-      <h1>Bloomify</h1>
+        <h1>Bloomify</h1>
     </div>
 
     <div class="container">
-      <div class="flower">
-        <img src="./Flower.jpeg" alt="Pastel Flower">
-      </div>
+        <div class="flower">
+            <img src="./Flower.jpeg" alt="Pastel Flower">
+        </div>
 
-      <div class="flower">
-        <img src="./Flower.jpeg" alt="Pastel Flower">
-      </div>
+        <div class="flower">
+            <img src="./Flower.jpeg" alt="Pastel Flower">
+        </div>
 
-      <div class="flower">
-        <img src="./Flower.jpeg" alt="Pastel Flower">
-      </div>
-      <!-- Add more flower images as needed -->
+        <div class="flower">
+            <img src="./Flower.jpeg" alt="Pastel Flower">
+        </div>
+        <!-- Add more flower images as needed -->
     </div>
 
     <div class="inputs">
-      <form>
-        <label>questions should fill this</label>
-        <input type="text" required=required placeholder=Answer>
-        <button type="submit">Submit</button>
-      </form>
-      <script src="updateQuestion.js"></script>
+        <form>
+            <label>questions should fill this</label>
+            <input type="text" required=required placeholder=Answer>
+            <button type="submit">Submit</button>
+        </form>
+        <script src="updateQuestion.js"></script>
     </div>
-    <script src="inputQuery.js"></script>
-  </body>
+    <script>
+        const form = document.querySelector('form');
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const fd = new FormData(form);
+            console.log(fd);
+        });
+    </script>
+</body>
 
 </html>

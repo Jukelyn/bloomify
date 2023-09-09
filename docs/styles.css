@@ -55,8 +55,9 @@ body {
   }
   
   .flower {
+    position: absolute;
     width: 10%;
-    max-width: 40px auto;
+    max-width: 40px;
     margin: auto;
     display: inline-block;
   }
