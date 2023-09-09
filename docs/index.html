@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,15 +19,15 @@
             <div class="flowers-container">
                 <div class="flowers">
                     <div class="flower">
-                        <img src="./Flower.jpeg" alt="Pastel Flower">
+                        <img src="assets/Flower.png" alt="Pastel Flower">
                     </div>
 
                     <div class="flower">
-                        <img src="./Flower.jpeg" alt="Pastel Flower">
+                        <img src="assets/Flower.png" alt="Pastel Flower">
                     </div>
 
                     <div class="flower">
-                        <img src="./Flower.jpeg" alt="Pastel Flower">
+                        <img src="assets/Flower.png" alt="Pastel Flower">
                     </div>
                     <!-- Add more flower images as needed -->
                 </div>
@@ -43,7 +42,26 @@
             </div>
         </div>
     </div>
+
+    <script>
+        const form = document.querySelector('form');
+        form.addEventListener('submit', (event) => {
+            event.preventDefault(); // prevents the form from submitting
+            const answer = new FormData(form); // gets the data from the form
+            const jsonData = JSON.stringify(Object.fromEntries(answer)); // JS to JSON
+            // localStorage.setItem('answers', jsonData); // saves
+            // Save the JSON string to a file
+            const blob = new Blob([jsonData], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'data.json';
+            a.click();
+            URL.revokeObjectURL(url);
+
+            window.location.href = 'index2.html'; // goes to next page
+        });
+    </script>
 </body>
 
 </html>
-

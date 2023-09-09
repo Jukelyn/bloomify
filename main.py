@@ -6,11 +6,6 @@ import json
 model_name = "bert-base-uncased"
 tokenizer = BertTokenizer.from_pretrained(model_name)
 
-
-# The inputs to be categorized
-entries = []
-
-
 def read_entry():
     # read entry and add it to entries list
     pass
