@@ -2,9 +2,9 @@
 <hr/>
 "The mind is a garden that needs to be cultivated"
 <hr/>
-**Bloomify: Cultivating Gratitude for a Healthier Mind**
 
-**Meet the Creators: Bryant Chung, Mehraz Ahmed, Jing Liu, Tahsin Rahman**
+
+**Creators: Bryant Chung, Mehraz Ahmed, Jing Liu, Tahsin Rahman**
 
 Do you ever find yourself overwhelmed by the hustle and bustle of daily life, forgetting to appreciate the little moments and blessings that surround you? Enter **Bloomify**, an innovative web application designed for the Code for Good 2023 Hackathon. Bloomify is your digital companion on a journey towards mental wellness and a brighter outlook on life.
 
