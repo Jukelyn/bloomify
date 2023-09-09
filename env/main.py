@@ -5,7 +5,7 @@ from transformers import BertTokenizer, BertForSequenceClassification
 model_name = "bert-base-uncased"
 tokenizer = BertTokenizer.from_pretrained(model_name)
 
-from sklearn.preprocessing import LabelEncoder
+# from sklearn.preprocessing import LabelEncoder
 
 # The inputs to be categorized
 user_inputs = [] # empty until populated by the user
