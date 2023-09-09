@@ -1,6 +1,7 @@
 # Import necessary libraries and modules
 from sklearn.preprocessing import LabelEncoder
 from transformers import BertTokenizer, BertForSequenceClassification
+import json
 
 model_name = "bert-base-uncased"
 tokenizer = BertTokenizer.from_pretrained(model_name)
@@ -16,23 +17,17 @@ def read_entry():
 
 
 def main():
-    # read input submission somehow maybe with read_entry() ?
-
-    # Define the categories
-   
+    f = open('userInputs.json')
+    entries = json.load(f)
+    
     categories = ["Health and Wellness", "Family", "Achievements", "Environment",
               "Material Possessions", "Community", "Miscellaneous"]
-    
-    #categories = ["Family", "Self Love", "Career", "Social"]
 
-    # Create an instance of MyModel (replace with your actual model)
     model = BertForSequenceClassification.from_pretrained(
         model_name, num_labels=len(categories))
 
-    # Classify the entries into categories
     predictions = model.classify(entries)
 
-    # Initialize a label encoder for category mapping
     label_encoder = LabelEncoder()
     label_encoder.fit(categories)
 
