@@ -1,64 +1,89 @@
 body {
-    justify-content: center;
-    background-color: white;
-    /* White background */
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    font-family: Arial, sans-serif;
-  }
-  
-  .inputs {
-    position: relative;
-    margin: 20px;
-    width: 250px;
-  }
-  
-  .inputs input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #000000;
-    border-radius: 20px;
-  }
-  
-  .inputs label {
-    justify-content: center;
-    padding: 10px;
-    position: relative;
-    pointer-events: none;
-    left: 0px;
-  }
-  
-  .inputs button {
-    position: relative;
-    padding: 3px;
-    margin: 10px;
-  }
-  
-  .inputs button:active {
-    transform: scale(0.95);
-  }
-  
-  .header {
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #C6EBC9;
-  }
-  
-  .container {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-  }
-  
-  .flower {
-    position: absolute;
-    width: 10%;
-    max-width: 40px;
-    margin: auto;
-    display: inline-block;
-  }
-  
+  background-color: white;
+  /* White background */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Fredoka One', sans-serif; /* Use the Google Fonts font */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  height: 100vh; /* Set the viewport height to ensure content takes the full screen */
+}
+
+.header-container {
+  /* Container for the header */
+  text-align: center; /* Center text horizontally */
+  margin: 75px auto 20px; /* Adjust the margin-top value to move the header up */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+}
+
+
+.header {
+  font-size: 3rem; /* Increase font size to make it bigger */
+  color: #C6EBC9; /* Pastel green text color */
+  margin: 0; /* Remove margin */
+}
+
+.content {
+  display: flex;
+  flex-direction: row; /* Arrange header and answer box side by side */
+  align-items: center; /* Center content vertically */
+  width: 100%;
+  max-width: 800px; /* Adjust the maximum width as needed */
+}
+
+.flowers-container {
+  /* Container for the flowers */
+  margin-top: 150px; /* Adjust as needed to move the flowers down */
+}
+
+.flowers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 60%; /* Adjust the width as needed */
+}
+
+.flower {
+  margin: 0 20px; /* Increase the margin to create more space */
+}
+
+.flower img {
+  max-width: 100px; /* Adjust the value to make the images smaller or larger */
+}
+
+.answer-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; /* Center the answer box contents horizontally */
+}
+
+/* Add the 'Fredoka One' font to the label and button */
+input, button, label {
+  font-family: 'Fredoka One', sans-serif;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  margin-bottom: 10px; /* Add space between input and button */
+}
+
+button {
+  padding: 3px;
+  color: #C6EBC9; /* Set the text color to pastel green */
+  background-color: transparent; /* Remove button background color */
+  border: none; /* Remove button border */
+  cursor: pointer; /* Add pointer cursor on hover */
+}
+
+/* Style the button on hover */
+button:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
