@@ -40,9 +40,12 @@
     <script>
         const form = document.querySelector('form');
         form.addEventListener('submit', (event) => {
-            event.preventDefault();
-            const fd = new FormData(form);
-            console.log(fd);
+            event.preventDefault(); // prevents the form from submitting
+            const answer = new FormData(form); // gets the data from the form
+            const jsonData = JSON.stringify(Object.fromEntries(answer)); // JS to JSON
+            localStorage.setItem('answer', jsonData); // saves
+
+            window.location.href = 'index2.html'; // goes to next page
         });
     </script>
 </body>
