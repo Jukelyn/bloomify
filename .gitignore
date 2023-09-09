@@ -1,3 +1,6 @@
+#dumb mac moment L
+*.DS_Store
+
 # Logs
 logs
 *.log
