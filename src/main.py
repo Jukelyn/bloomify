@@ -7,21 +7,17 @@ model_name = "bert-base-uncased"
 tokenizer = BertTokenizer.from_pretrained(model_name)
 
 
-# The inputs to be categorized
-entries = []
-
-
 def read_entry():
-    # read entry and add it to entries list
-    pass
-
-
-def main():
     f = open('../docs/data/userInputs.json')
     entries = json.load(f)
     
+
+
+def main():
+    read_entry() # reads entries from the user inputs
+
     categories = ["Health and Wellness", "Family", "Achievements", "Environment",
-              "Material Possessions", "Community", "Miscellaneous"]
+                  "Material Possessions", "Community", "Miscellaneous"]
 
     model = BertForSequenceClassification.from_pretrained(
         model_name, num_labels=len(categories))

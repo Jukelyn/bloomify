@@ -1,45 +1,27 @@
-const fs = require('fs');
-const express = require('express');
-const bodyParser = require('body-parser');
+const form = document.getElementById('formm');
 
-const app = express();
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+form.addEventListener('submit', function (e) {
+    e.preventDefault(); // Prevent the form from submitting the traditional way
 
-const jsonFilePath = './data/userInputs.json';
+    const ans = document.getElementById('ans').value;
 
-app.post('/submit', (req, res) => {
-  // Read the existing JSON file
-  fs.readFile(jsonFilePath, 'utf8', (err, data) => {
-    if (err) {
-      console.error(err);
-      res.status(500).send('Error reading JSON file');
-      return;
-    }
-
-    try {
-      // Parse the JSON data into a JavaScript object
-      const jsonData = JSON.parse(data);
-
-      // Append the new data from the form to the array
-      jsonData.push(req.body);
-
-      // Write the updated data back to the JSON file
-      fs.writeFile(jsonFilePath, JSON.stringify(jsonData), (err) => {
-        if (err) {
-          console.error(err);
-          res.status(500).send('Error writing JSON file');
-        } else {
-          res.send('Data appended to JSON file');
-        }
-      });
-    } catch (parseError) {
-      console.error(parseError);
-      res.status(500).send('Error parsing JSON data');
-    }
-  });
+    // Call a function to save the data to Firestore
+    saveDataToFirestore(ans);
 });
 
-app.listen(3000, () => {
-  console.log('Server is running on port 3000');
-});
+function saveDataToFirestore(ans) {
+    const db = app.firestore();
+
+    db.collection('answers').add({
+        answer: ans,
+    })
+
+        .then((docRef) => {
+            console.log('Document written with ID: ', docRef.id);
+            // Optionally, clear the form after successful submission
+            form.reset();
+        })
+        .catch((error) => {
+            console.error('Error adding document: ', error);
+        });
+}
