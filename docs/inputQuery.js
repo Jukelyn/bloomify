@@ -19,19 +19,20 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 // Create a root reference
 const storage = getStorage();
-const storageRef = ref(storage, 'user_inputs');
-
+const storageRef = ref(storage, 'user_inputs.txt');
+const answer = 'This is my message.'; // this should be the user input
+uploadString(storageRef, answer).then((snapshot) => {
+    console.log('Uploaded a raw string!');
+});
 // const form = document.getElementById('formm');
-
+/*
 form.addEventListener('submit', function (e) {
     e.preventDefault(); // Prevent the form from submitting the traditional way
 
-    const answer = 'This is my message.'; // this should be the user input
-    uploadString(storageRef, message).then((snapshot) => {
-        console.log('Uploaded a raw string!');
-    });
+
     const ans = document.getElementById('ans').value;
 
     // Call a function to save the data to Storage
     saveInput(ans);
 });
+*/
