@@ -1,5 +1,5 @@
 body {
-  background-color: #B4E4FF;
+  background-color: #aed7ee;
   margin: 0;
   padding: 0;
   display: flex;
@@ -22,9 +22,8 @@ body {
 .header {
   pointer-events: none;
   justify-content: center;
-  text-shadow: 0 0 4px #c6c6c6; /* Add shadow to text */
   font-size: 60px; /* Increase font size to make it bigger */
-  color: #C6EBC9; /* Pastel green text color */
+  color: #ffffff; /* Pastel green text color */
   margin: 0; /* Remove margin */
 }
 
@@ -80,7 +79,7 @@ input {
 
 button {
   padding: 3px;
-  color: #C6EBC9; /* Set the text color to pastel green */
+  color: #ffffff; /* Set the text color to pastel green */
   background-color: transparent; /* Remove button background color */
   border: none; /* Remove button border */
   cursor: pointer; /* Add pointer cursor on hover */
