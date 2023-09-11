@@ -1,7 +1,5 @@
 # bloomify
 <hr/>
-"The mind is a garden that needs to be cultivated"
-<hr/>
 
 
 **Creators: Bryant Chung, Mehraz Ahmed, Jing Liu, Tahsin Rahman**
