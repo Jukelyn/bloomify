@@ -39,6 +39,8 @@ inputForm.addEventListener("submit", function (e) {
         // Upload the text content as a string
         uploadString(storageRef, text).then((snapshot) => {
             console.log("Text uploaded successfully!");
+            window.location.href = "inputReceived.html"; // goes to next page
+
         }).catch((error) => {
             console.error("Error uploading text: ${error.message}");
         });
