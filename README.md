@@ -2,7 +2,7 @@
 <hr/>
 
 
-**Creators: Bryant Chung, Mehraz Ahmed, Jing Liu, Tahsin Rahman**
+**Creators: Mehraz Ahmed, Bryant Chung, Jing Liu, Tahsin Rahman**
 
 Do you ever find yourself overwhelmed by the hustle and bustle of daily life, forgetting to appreciate the little moments and blessings that surround you? Enter **bloomify**, an innovative web application designed for the Code for Good 2023 Hackathon. bloomify is your digital companion on a journey towards mental wellness and a brighter outlook on life.
 
