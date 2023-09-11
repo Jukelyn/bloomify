@@ -6,15 +6,19 @@ import json
 model_name = "bert-base-uncased"
 tokenizer = BertTokenizer.from_pretrained(model_name)
 
+entries = None
+
 
 def read_entry():
-    f = open('../docs/data/userInputs.json')
-    entries = json.load(f)
-    
+    """
+    TODO: connect to firebase storrage, get all the files and then parse them and then
+    make it so that those files are deleted, and instead you are left with just one bigger
+    file with the data as either a csv or json. Easier said than done... 
+    """
 
 
 def main():
-    read_entry() # reads entries from the user inputs
+    read_entry()  # reads entries from the user inputs
 
     categories = ["Health and Wellness", "Family", "Achievements", "Environment",
                   "Material Possessions", "Community", "Miscellaneous"]
