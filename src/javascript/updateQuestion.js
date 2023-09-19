@@ -74,6 +74,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // Initial label update
     updateLabel();
 
-    // Update the label every hour ( we can change this to each day for "production" later)
-    setInterval(updateLabel, 3600000); // 3600000 ms = 1hr
+    // Update the label every 12hrs
+    setInterval(updateLabel, 43200000); // 3600000 ms = 1hr
 });
