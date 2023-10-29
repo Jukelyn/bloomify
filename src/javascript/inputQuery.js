@@ -4,15 +4,13 @@ import { getDownloadURL, getStorage, ref, uploadString } from "https://www.gstat
 // Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    // apiKey: "${process.env.API_KEY}",
-    apiKey: "AIzaSyDTjZc234GAMzUgXlk5gTISANWyaOhT7Jc",
+    apiKey: "${process.env.API_KEY}",
     authDomain: "jukelyn-s-site.firebaseapp.com",
     databaseURL: "https://jukelyn-s-site-default-rtdb.firebaseio.com",
     projectId: "jukelyn-s-site",
     storageBucket: "jukelyn-s-site.appspot.com",
     messagingSenderId: "980268158913",
-    // appId: "${process.env.APP_ID}",
-    appId: "1:980268158913:web:717628d0946324733ae940",
+    appId: "${process.env.APP_ID}",
     measurementId: "G-9P75C95WCP"
 };
 
@@ -39,7 +37,7 @@ inputForm.addEventListener("submit", function (e) {
         // Upload the text content as a string
         uploadString(storageRef, text).then((snapshot) => {
             console.log("Text uploaded successfully!");
-            window.location.href = "inputReceived.html"; // goes to next page
+            window.location.href = "submit.html"; // goes to next page
 
         }).catch((error) => {
             console.error("Error uploading text: ${error.message}");
